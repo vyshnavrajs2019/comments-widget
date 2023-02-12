@@ -24,7 +24,7 @@ const config: WebpackConfiguration = {
 	},
 	plugins: [
 		new HTMLWebpackPlugin({
-			title: "Interview",
+			title: "Comments Widget - Flipkart UI Machine Coding Round Question",
 			template: "./public/index.html",
 		}),
 	],
