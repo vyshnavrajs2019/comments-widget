@@ -6,5 +6,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title><%= htmlWebpackPlugin.options.title %></title>
 	</head>
-	<body></body>
+	<body>
+		<template id="comment">
+			<div class="comment">
+				<div class="comment__header"></div>
+				<div class="comment__body"></div>
+				<div class="comment__footer"></div>
+				<div class="comment__children"></div>
+			</div>
+		</template>
+		<div id="comments-widget">
+			<div id="comments"></div>
+			<form method="post" action="#" id="comment-form">
+				<textarea
+					rows="5"
+					placeholder="Your comment"
+					name="body"
+				></textarea>
+				<button>POST</button>
+			</form>
+		</div>
+	</body>
 </html>
