@@ -5,7 +5,7 @@ const config: WebpackConfiguration = {
 	entry: "./src/index.ts",
 	devServer: {
 		hot: true,
-		watchFiles: ["./public/index.html"],
+		watchFiles: ["./public"],
 		open: true,
 	},
 	module: {
@@ -24,8 +24,8 @@ const config: WebpackConfiguration = {
 	},
 	plugins: [
 		new HTMLWebpackPlugin({
-			title: "Comments Widget - Flipkart UI Machine Coding Round Question",
 			template: "./public/index.html",
+			title: "Comments Widget - Flipkart UI Machine Coding Round Question",
 		}),
 	],
 	optimization: {
